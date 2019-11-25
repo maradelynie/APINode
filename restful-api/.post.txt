@@ -1,0 +1,7 @@
+http://localhost:3000/api/aluno/
+
+
+{
+	"Nome_Aluno": "teste Mara",
+	"Sobrenome_Aluno": "teste teste Mara"
+}
