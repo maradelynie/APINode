@@ -1,5 +1,8 @@
 http://localhost:3000/api/aluno/xxx
 
+http://localhost:3000/api/disciplina/xxx
+
+http://localhost:3000/api/professor/xxx
 
 
 

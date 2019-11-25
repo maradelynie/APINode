@@ -1,6 +1,17 @@
 http://localhost:3000/api/aluno/xxx
 
+http://localhost:3000/api/disciplina/xxx
+
+http://localhost:3000/api/professor/xxx
+
+
 {
 	"Nome_Aluno": "teste Mara2",
 	"Sobrenome_Aluno": "teste teste Mara2"
 }
+
+{
+	"Nome_Disciplina": "disciplina Mara2", "Cod_Departamento": "2"}
+
+{
+	"Nome_Professor": "prof Mara2", "Sobrenome_Professor": "sob prof2"}
