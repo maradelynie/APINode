@@ -16,6 +16,6 @@ node index  //to start the API
 
 There are .txt with the routes and the exemple of modification.
 
-This Code was made by me (Mara Delynie) for a DataBase2 class of the Professor Wendell J. V.
+This Code was developed by me (Mara Delynie) for a DataBase2 class of the Professor Wendell J. V.
 
 Colaborators: Rafael Costa
