@@ -7,17 +7,15 @@ const app = express();
 app.use(bodyParser.json());
 app.use(cors(''));
 
-//connection config
+//connection config----------------------
 const connection = mysql.createConnection({
     host: 'localhost',
     user: 'maraoliv_crud',
     password: 'feelFreeToFarm',
     database: 'maraoliv_APINode923756',
-    //port: 3306,
-    //ssl: true
-
 });
-//routes
+//routes-------------------
+
 //show all
 
   app.get('/project',(req, res) => {
@@ -28,9 +26,7 @@ const connection = mysql.createConnection({
     });
   });
 
-
-//add new 
-
+//add new
   app.post('/project',(req, res) => {
       let data = {name: req.body.name, description: req.body.description, web_url: req.body.web_url, html_url: req.body.html_url, icon: req.body.icon};
         let sql = "INSERT INTO projetos SET ?";
@@ -41,7 +37,6 @@ const connection = mysql.createConnection({
     });
 
   //update aluno
- 
     app.put('/project:id',(req, res) => {
       let sql = "UPDATE `projetos` SET `name`='"+req.body.name+"',`description`='"+req.body.description+"',`web_url`='"+req.body.web_url+"',`html_url`='"+req.body.html_url+"',`icon`='"+req.body.icon+"' WHERE id='"+req.params.id+"'" ;
       let query = connection.query(sql, (err, results) => {
@@ -51,7 +46,6 @@ const connection = mysql.createConnection({
     });
   
   //Delete aluno
- 
     app.delete('/project:id',(req, res) => {
       let sql = "DELETE FROM projetos WHERE id="+req.params.id+"";
       let query = connection.query(sql, (err, results) => {
