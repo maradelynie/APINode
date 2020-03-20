@@ -1,19 +1,30 @@
 {
-  "name": "crudapinode",
+  "name": "apinode",
   "version": "1.0.0",
-  "description": "Trabalho de BD2",
-  "main": "crud.js",
+  "description": "Server side aplication for to make a Node-React CRUD.",
+  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node crud.js"
+    "dev": "node index",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maradelynie/APINode.git"
+  },
+  "keywords": [
+    "NodeJs",
+    "API"
+  ],
+  "author": "Mara Oliveira",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/maradelynie/APINode/issues"
+  },
+  "homepage": "https://github.com/maradelynie/APINode#readme",
   "dependencies": {
     "body-parser": "^1.19.0",
     "cors": "^2.8.5",
     "express": "^4.17.1",
     "mysql": "^2.18.1"
-  },
-  "devDependencies": {
-    "nodemon": "^2.0.2"
   }
 }
