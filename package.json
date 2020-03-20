@@ -4,6 +4,7 @@
   "description": "Server side aplication for to make a Node-React CRUD.",
   "main": "index.js",
   "scripts": {
+    "start": "node index",
     "dev": "node index",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
