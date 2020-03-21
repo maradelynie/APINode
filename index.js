@@ -26,6 +26,7 @@ app.use(function(req, res, next) {
 //GET ALL-----------------------------------------------------------------
 router.get('/', (req, res) =>{
     execSQLQuery('SELECT * FROM Projetos', res);
+    res.header("Access-Control-Allow-Origin", "*");
 })
 
 //GET ONE-----------------------------------------------------------------
