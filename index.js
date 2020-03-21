@@ -1,7 +1,7 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const mysql = require('mysql');
-const cors = require("cors");
+
 
 const app = express();         
 const router = express.Router();
@@ -12,7 +12,7 @@ const port = process.env.PORT || 3333; //porta padrão
 app.use(bodyParser.json());
 app.use('/', router);
 
-app.use(cors(''));
+
 
 
 
